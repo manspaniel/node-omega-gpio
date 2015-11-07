@@ -3,7 +3,7 @@
 	
 	This sample relies on you having an LED wired up (in this case, to pin 14)
 	Learn how to do that here:
-	- https://www.arduino.cc/en/Tutorial/Blink
+	- https://www.arduino.cc/en/Tutorial/Blink 
 */
 var GPIOHelper = require('./gpiohelper');
 

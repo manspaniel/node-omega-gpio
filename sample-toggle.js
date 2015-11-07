@@ -4,7 +4,7 @@
 	This sample relies on you connecting an LED and a momentary button.
 	You might find these useful for figuring out how to wire those up:
 	- https://www.arduino.cc/en/Tutorial/Button
-	- https://www.arduino.cc/en/Tutorial/Blink
+	- https://www.arduino.cc/en/Tutorial/Blink 
 */
 
 var GPIOHelper = require('./gpiohelper');
