@@ -14,8 +14,12 @@ function GPIOHelper() {
 	for(var x = 0; x < this.pins.length; x++) {
 		var pin = this.pins[x];
 		// If the 'value' path already exists, then we don't need to export.
-		if(fs.existsSync(this.pinValuePath.replace('$', pin) === false)) {
-			fs.writeFileSync(this.exportPath, String(this.pins[x]));
+		if(fs.existsSync(this.pinValuePath.replace('$', pin)) === false) {
+			try {
+				fs.writeFileSync(this.exportPath, String(this.pins[x]));
+			} catch(e) {
+				console.log("Error exporting pin "+this.pins[x]+": "+e.message);
+			}
 		}
 	}
 	
